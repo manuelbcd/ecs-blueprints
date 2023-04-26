@@ -36,8 +36,8 @@ Access to your Sysdig account via https://app.sysdigcloud.com (Dont forget to ch
 
 Go to the "events" section. Make sure to activate the info filter (the blue one)
 
-<p align="center">
-  <img src="../../docs/sysdig-secure-event-filters.png"/>
+<p align="left">
+  <img src="../../docs/sysdig-secure-event-filters.png" width="550" />
 </p>
 
 After a couple of minutes you should see new events of type "Write below binary dir" populating the list as below (they will appear grouped as "Sysdig Runtime Activity Logs").
