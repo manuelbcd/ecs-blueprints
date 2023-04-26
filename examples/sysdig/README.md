@@ -26,7 +26,21 @@ terraform apply -auto-approve
 
 ### Testing the Solution
 
-Access to your Sysdig account via https://app.sysdigcloud.com (make sure you chose the same region that you chosen when registering the account).
+Access to your Sysdig account via https://app.sysdigcloud.com (Dont forget to chose the same region that you chosen when registering the account).
+
+1. Go to "Policies" > "Runtime Policies" and activate <b>'Runtime Activity Logs'</b> to allow Sysdig runtime engine to capture and show the demo event triggered by our "infected" dummy container.
+
+  <p align="center">
+    <img src="../../docs/sysdig-secure-rules.png"/>
+  </p>
+
+Go to the "events" section. Make sure to activate the info filter (the blue one)
+
+<p align="center">
+  <img src="../../docs/sysdig-secure-event-filters.png"/>
+</p>
+
+After a couple of minutes you should see new events of type "Write below binary dir" populating the list as below (they will appear grouped as "Sysdig Runtime Activity Logs").
 
 <p align="center">
   <img src="../../docs/sysdig-secure-screenshot.png"/>
